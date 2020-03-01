@@ -1,9 +1,9 @@
 
-#layout 
+#container 
 {
 width: 90%;
 margin: 10px auto;
-background-color: #FFF;
+background-color:blue;
 color: #333;
 border: 1px solid gray;
 padding: 30px;
