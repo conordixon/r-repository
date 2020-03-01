@@ -1,17 +1,15 @@
 
-#container 
-{
-width: 90%;
-margin: 10px auto;
-background-color:blue;
-color: #333;
-border: 1px solid gray;
-padding: 30px;
-line-height: 130%; 
-}
-#top 
-{
-padding:.5em;
-background-color: #ddd;
-border-bottom: 1px solid gray;
-}    
+#containerId{
+	width: 90%;
+	margin: 10px auto;
+	background-color:blue;
+	color: #333;
+	border: 1px solid gray;
+	padding: 30px;
+	line-height: 130%; 
+	}
+#top{
+	padding:.5em;
+	background-color: #ddd;
+	border-bottom: 1px solid gray;
+	}    
