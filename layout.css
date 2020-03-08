@@ -5,21 +5,23 @@ Tags: Website Project
 #body {
 	font-family: Arial;
 }  
-/*#container {
-	display: flex;
-	background-color: lightblue;
-	color: #333;
-	border: 1px solid gray;
-	padding: 10px;
-	line-height: 130%; 
-}*/
 #header {
 	display: flex center;
 	background-color: #666;
-	padding: 30px;
+	padding: 40px;
 	text-align: center;
 	font-size: 35px;
 	color: white;
+}
+#container {
+	display: flex center;
+	background-color: white;
+	text-align: center;
+	font-size: 15px;
+	color: #333;
+	padding: 100px;
+	line-height: 130%; 
+	margin: auto;
 }
 #mainsection {
 	display: -webkit-flex;
@@ -27,7 +29,7 @@ Tags: Website Project
 }
 #footer {
 	background-color: #777;
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 	color: white;
 }
