@@ -2,6 +2,8 @@
 Author: Conor Dixon
 Tags: Website Project
 */
+
+/*************** Home page ********************/
 #body {
 	font-family: Arial;
 }  
@@ -34,4 +36,194 @@ Tags: Website Project
 	text-align: center;
 	color: white;
 }
+
+
+
+/*************** Gallery ********************/
+#gallery div:not(h2):not(.modal){
+ border-radius: 3px;
+ display: grid;
+}
+#gallery{
+	display:grid;
+	grid-template-areas: "one one two three"
+						 "one one four three"
+						 "five six eight eight"
+						 "seven seven eight eight";
+	grid-auto-rows: 20vh;
+	gap: 1em;
+	margin: 80px;
+}
+#gallery .box{
+	background-size: cover;
+	background-position: center;
+}
+#gallery .box:hover{
+	transform: scale(1.1);
+	z-index: 1;
+	transition: 0.4s ease-in-out;
+	background-size: cover;
+	background-position: center;
+	cursor: pointer;
+}
+#gallery .box .text a{
+	color: #333;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+#gallery .box .text a:hover{
+	font-weight: 600;
+}
+#gallery div{
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+	text-shadow: 2px 2px 5px #fff,-2px -2px 3px #fff;
+}
+#gallery .img-1{
+	grid-area:one;
+	background-image: url("images/1.jpg");
+}
+#gallery .img-2{
+	grid-area:two;
+	background-image: url("images/2.jpg");
+	
+}
+#gallery .img-3{
+	grid-area:three;
+	background-image: url("images/3.jpg");
+}
+#gallery .img-4{
+	grid-area:four;
+	background-image: url("images/4.jpg");
+}
+#gallery .img-5{
+	grid-area:five;
+	background-image: url("images/5.jpg");
+}
+
+#gallery .img-6{
+	grid-area:six;
+	background-image: url("images/6.jpg");
+}
+#gallery .img-7{
+	grid-area:seven;
+	background-image: url("images/7.jpg");
+}
+#gallery .img-8{
+	grid-area:eight;
+	background-image: url("images/8.jpg");
+} 
+
+
+/*************** Slideshow modal ********************/
+
+  
+  /* The Modal (background) */
+  .modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 50px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+	position: relative;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+	display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  
+  /* Caption text */
+  .caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+  }
+  
+  
+  .active{
+	opacity: 1;
+  }
+  
+
+/**************  gallery media query *****************/
+
+@media only screen and (max-width: 720px) {
+	#gallery{
+		grid-template-areas: "one"
+							 "two"
+							 "three"
+							 "four"
+							 "five"
+							 "six"
+							 "seven"
+							 "eight";
+	}
+}
+
+
+
 

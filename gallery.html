@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="author" content="Lukasz Plawinski">
+    <meta name="Overview " content="Artist Home Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css" type="text/css" />
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <main id="gallery">
+        <div class="img-1  box" onclick="openModal();currSlide(1)">
+            <div class="text">
+                <h2>The Starry Night</h2>
+                <a href="artist1.html"><i>Artist One</i></a>
+            </div>
+        </div>
+        <div class="img-2  box" onclick="openModal();currSlide(2)" onclick="openModal();currSlide()"><div class="text">
+                <h2>The Starry Night</h2>
+                <a href="artist2.html"><i>Artist Two</i></a>
+            </div>
+        </div>
+        <div class="img-3  box" onclick="openModal();currSlide(3)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist3.html"><i>Artist Three</i></a>
+        </div></div>
+        <div class="img-4  box" onclick="openModal();currSlide(4)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist1.html"><i>Artist One</i></a>
+        </div></div>
+        <div class="img-5  box" onclick="openModal();currSlide(5)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist1.html"><i>Artist One</i></a>
+        </div></div>
+        <div class="img-6  box" onclick="openModal();currSlide(6)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist2.html"><i>Artist Two</i></a>
+        </div></div>
+        <div class="img-7  box" onclick="openModal();currSlide(7)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist3.html"><i>Artist Three</i></a>
+        </div></div>
+        <div class="img-8  box" onclick="openModal();currSlide(8)"><div class="text">
+            <h2>The Starry Night</h2>
+            <a href="artist1.html"><i>Artist One</i></a>
+        </div></div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+
+            <div class="modal-content">
+                <div class="mySlides">
+                    <img class="" src="/webdesign-project/images/1.jpg" alt="1" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/2.jpg" alt="2" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/4.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/5.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/6.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/7.jpg" style="width:100%">
+                </div>
+                <div class="mySlides">
+                    <img src="/webdesign-project/images/8.jpg" style="width:100%">
+                </div>
+            
+
+                        <!-- Next/previous controls -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+<script src="/webdesign-project/script.js"></script>
+
+</body>
+
+</html>
