@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ContactForm</title>
+	<link rel="stylesheet" href="Forms.css">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		function myFunction()
+		{
+		alert("Your message has been sent");
+		}
+	</script>
+</head>
+<body>
+<form>
+	<div>
+		<h1>Contact Us!</h1>
+	<label>
+		<span>Name</span>
+		<input id="name" type="text" name="name" />
+	</label>
+	<label>
+		<span>Email Address</span>
+		<input id="email" type="text" name="email"/>
+	</label>
+	<label>
+		<span>Subject</span>
+			<select id="subjects" name="subject">
+			<option value="reset"> </option>
+			<option value="events">Events</option>
+			<option value="tickets">Tickets</option>
+			<option value="artists">Artists</option>
+			<option value="0ther">Other</option>
+			</select>  
+	</label>
+	<label>
+		<span>Message</span>
+		<textarea id="feedback"></textarea>
+		<input class="button" onclick="myFunction()" type="button" value="Submit" />
+	</label>
+	</div>
+</form>
+</body>
