@@ -7,31 +7,32 @@ Tags: Website Project
 }  
 #header {
 	display: flex center;
-	background-color: #666;
-	padding: 40px;
-	text-align: center;
-	font-size: 35px;
-	color: white;
+	background-color:#666;
+	padding:40px;
+	text-align:center;
+	font-size:35px;
+	color:white;
 }
-#container {
-	display: flex center;
-	background-color: white;
-	text-align: center;
-	font-size: 15px;
-	width: 50%;
-	color: #333;
-	padding: 100px;
-	line-height: 130%; 
-	margin: auto;
+.container {
+	display:flex center;
+	background-color:white;
+	text-align:center;
+	font-size:15px;
+	width:50%;
+	color:#333;
+	padding:100px;
+	line-height:130%; 
+	margin:auto;
 }
-#mainsection {
-	display: -webkit-flex;
-	display: flex;
+.mainsection {
+	display:-webkit-flex;
+	display:flex;
+	}
+.footer {
+	clear:both;
+	margin:0;
+	padding:.5em;
+	background-color:#777;
+	text-align:center;
+	color:white;
 }
-#footer {
-	background-color: #777;
-	padding: 30px;
-	text-align: center;
-	color: white;
-}
-
