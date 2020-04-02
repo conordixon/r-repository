@@ -1,9 +1,6 @@
-/*
-Author: Conor Dixon
-Tags: Website Project
-*/
-#body {
+body {
 	font-family: Arial;
+	margin:0;
 }  
 #header {
 	display: flex center;
