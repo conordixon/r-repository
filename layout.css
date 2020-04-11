@@ -1,22 +1,116 @@
-/*
-Author: Conor Dixon
-Tags: Website Project
-*/
+/* Navbar /Abubakr */
+/* Home page / Conor */
+/* Gallery / Lukasz */
+/* Contact Form / Alex */
 
-/*************** Home page ********************/
+*{
+	margin: 0;
+	padding: 0px;
+}
+
+/***************Navbar /Abubakr ********************/
+
+
+
+.body1 {
+   font-family: 'Merriweather', Arial, sans-serif;	
+   
+}
+nav{
+	position: fixed;
+	left: 10%;
+	padding: 10px 20px 12px 20px;
+	background-color: #f15060;
+	top:20px;
+	width: 80%;
+	text-align: center;
+	box-sizing: border-box;
+	opacity: 0.9;
+	z-index: 2;
+}
+
+
+.navbar a {
+
+text-decoration: none;
+padding: 20px 30px; 
+line-height: 1.7;
+font-weight: 500;
+margin:0px;
+color: pink;
+}
+
+.active, .navbar ul li:hover, .navbar a:hover {
+   
+background-color:#2bab0d;
+border-radius: 3px;
+color:white;
+
+}
+
+
+.navbar ul li {
+ color: pink;
+ text-align: center;
+ list-style: none;
+ 
+ }
+
+
+.navbar ul li{
+   color: green;
+   list-style: none;
+   display: inline-flex;
+   
+}
+
+.navbar .fas {
+   
+   color: yellow;
+   margin-right: 0.8em;
+}
+
+
+
+
+/*************** Hero Image ********************/
+
+ #hero_img{
+	width:100%;
+	height: 70vh;
+	margin: 0;
+    background:  url("images/hero.jpg");
+	background-position: center;
+	background-size: cover;
+	back
+    background-repeat: no-repeat;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    letter-spacing: 0.8px;
+    
+  }
+
+
+/*************** Home page / Conor ********************/
 #body {
 	font-family: Arial;
 }  
-#header {
-	display: flex center;
+nav img{
+	margin: 10px 5px 0 10px ;
+	float: left;
+	width: 50px;
+	height: 50px;
+	transform: rotate(-25deg);
+}
+main header {
 	background-color: #666;
-	padding: 40px;
+	padding: 15px;
 	text-align: center;
 	font-size: 35px;
 	color: white;
 }
 #container {
-	display: flex center;
 	background-color: white;
 	text-align: center;
 	font-size: 15px;
@@ -26,20 +120,26 @@ Tags: Website Project
 	line-height: 130%; 
 	margin: auto;
 }
+#container h1{
+	margin-bottom: 20px;
+}
 #mainsection {
 	display: -webkit-flex;
 	display: flex;
 }
-#footer {
+footer {
 	background-color: #777;
 	padding: 30px;
 	text-align: center;
 	color: white;
 }
+main #container h1{
+	margin: 20px;
+}
 
 
 
-/*************** Gallery ********************/
+/*************** Gallery / Lukasz ********************/
 #gallery div:not(h2):not(.modal){
  border-radius: 3px;
  display: grid;
@@ -209,6 +309,111 @@ Tags: Website Project
   }
   
 
+  /***************  Artists **********************/
+  #artists_container{
+	  margin: 30px auto;
+	  width: 80%;
+	  display: flex;
+	  flex-direction: column;
+  }
+  #artists_container .artist{
+	  margin: 30px 10px;
+	  display: flex;
+	  align-items: center;
+	  text-align: center;
+	  padding: 0 20px;
+  }
+  #artists_container .artist  a{
+	  text-decoration: none;
+	  color: #333;
+  }
+  #artists_container .artist h3{
+	  margin-bottom: 15px;
+  }
+  
+  #artists_container .artist_right{
+	  float: right;
+	  flex-direction: row-reverse;
+  }
+  #artists_container img{
+	  margin: 15px;
+	  width: 200px;
+	  border-radius: 50%;
+  }
+  #artists_container .artist:hover{
+	  box-shadow:  1px 1px 5px #666;
+	  transition:300ms ease-in-out;
+  }
+  #artists_container .artist ul li{
+	  list-style-type: none;
+	  line-height: 1.4em;
+  }
+  #artists_container .artist .description{
+	  margin: 0 auto;
+  }
+
+
+  /***************  Contact Form / Alex **********************/
+
+ #contact_form form {
+	background-color: white;	
+	width: 100%;
+	height: 700px;
+	margin-top:30px;
+	font-family: 'Merriweather', Arial, sans-serif;		
+	font-size: 20px;
+	font-style: italic;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+	color: #f15060;
+	padding: 10px;
+}
+
+#contact_form input{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	display: block;
+	height: 25px;
+}
+
+#contact_form textarea#feedback {
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	height:250px;
+	display: block;
+}
+
+#contact_form select{
+	width: 80%;
+	margin-left:auto;
+	margin-right:auto;
+	height:25px;
+	display: block;
+}
+
+#contact_form input.button{
+	height:40px;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-left:auto;
+	margin-right:auto;
+	width: 100px;
+	background: #f15060;
+	color: white;
+	font-family: 'Merriweather', Arial, sans-serif;
+	border-radius:4px;
+	cursor: pointer;
+}
+#contact_form input.button:hover{
+	background: #2bab0d;
+}
+#contact_form h1{
+	margin: 20px;
+}
+
 /**************  gallery media query *****************/
 
 @media only screen and (max-width: 720px) {
@@ -225,5 +430,18 @@ Tags: Website Project
 }
 
 
+/**************  nav media query *****************/
 
-
+@media only screen and (max-width: 720px){
+	nav{
+		width: 60%;
+		left: 20%;
+	}
+	nav img{
+		float: none;
+		margin:10px 5px 8px 10px;
+	}
+	#artists_container .artist{
+		flex-direction: column;
+	}
+}

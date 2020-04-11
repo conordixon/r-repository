@@ -1,0 +1,69 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+  	<meta charset="UTF-8">
+  	<title>ContactForm</title>
+  	<link rel="stylesheet" href="layout.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+  	<nav>
+  		<img id="logo" src="images/logo_2.png" alt="">
+  		<div class="navbar">
+  			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="artists.html">Artists</a></li>
+  				<li><a href="gallery.html">Gallery</a></li>
+  				<li><a href="contact.html">Contact us</a></li>
+  			</ul>
+  		</div>
+  	</nav>
+  	<section>
+  		<div id="hero_img"></div>
+  	</section>
+
+  	<main id="contact_form">
+  		<header>
+  			<h3>Contact Form</h3>
+  		</header>
+
+  		<form>
+  			<div>
+  				<h1>Contact Us!</h1>
+  				<label>
+  					<span>Name</span>
+  					<input id="name" type="text" name="name" />
+  				</label>
+  				<label>
+  					<span>Email Address</span>
+  					<input id="email" type="text" name="email" />
+  				</label>
+  				<label>
+  					<span>Subject</span>
+  					<select id="subjects" name="subject">
+  						<option value="reset"> </option>
+  						<option value="events">Events</option>
+  						<option value="tickets">Tickets</option>
+  						<option value="artists">Artists</option>
+  						<option value="0ther">Other</option>
+  					</select>
+  				</label>
+  				<label>
+  					<span>Message</span>
+  					<textarea id="feedback"></textarea>
+  					<input class="button" onclick="myFunction()" type="button" value="Submit" />
+  				</label>
+  			</div>
+  		</form>
+  	</main>
+
+  	<footer>
+  		<p>Address</p>
+  	</footer>
+
+  	<script src="/webdesign-project/script.js"></script>
+  </body>
+
+  </html>
