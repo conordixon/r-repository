@@ -5,7 +5,7 @@
 
 *{
 	margin: 0;
-	padding: 0px;
+	padding: 0;
 }
 
 /***************Navbar /Abubakr ********************/
@@ -367,7 +367,7 @@ main #container h1{
 	line-height: 24px;
 	font-weight: bold;
 	color: #f15060;
-	padding: 10px;
+	/* padding: 10px; */
 }
 
 #contact_form input{
@@ -410,8 +410,13 @@ main #container h1{
 #contact_form input.button:hover{
 	background: #2bab0d;
 }
-#contact_form h1{
+#contact_form form h1{
 	margin: 20px;
+}
+#contact_form form input,
+#contact_form form select,
+#contact_form form textarea{
+	margin: 20px auto;
 }
 
 /**************  gallery media query *****************/

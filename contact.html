@@ -29,7 +29,7 @@
   			<h3>Contact Form</h3>
   		</header>
 
-  		<form>
+  		<form name="contact_form">
   			<div>
   				<h1>Contact Us!</h1>
   				<label>
@@ -52,8 +52,8 @@
   				</label>
   				<label>
   					<span>Message</span>
-  					<textarea id="feedback"></textarea>
-  					<input class="button" onclick="myFunction()" type="button" value="Submit" />
+  					<textarea id="feedback" name="feedback"></textarea>
+  					<input class="button" onclick="sendingFunction()" type="button" value="Submit" />
   				</label>
   			</div>
   		</form>
@@ -63,7 +63,7 @@
   		<p>Address</p>
   	</footer>
 
-  	<script src="/webdesign-project/script.js"></script>
+  	<script src="script.js"></script>
   </body>
 
   </html>
