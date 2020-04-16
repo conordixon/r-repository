@@ -19,7 +19,7 @@
 nav{
 	position: fixed;
 	left: 10%;
-	padding: 10px 20px 12px 20px;
+	padding: 10px 15px 12px 20px;
 	background-color: #f15060;
 	top:20px;
 	width: 80%;
@@ -70,7 +70,24 @@ color:white;
    margin-right: 0.8em;
 }
 
-
+/*************** Hide /Show Menu ********/
+.menu_btn div{
+	width: 25px;
+	height: 4px;
+	background-color: #333;
+	margin: 5px 0;
+	border-radius: 20%;
+}
+.menu_btn{
+	display: none;
+	float: right;
+	margin-top: 13px;
+	padding: 7px ;
+	border-radius: 5px;
+}
+.menu_btn:hover{
+	background-color: #2bab0d;
+}
 
 
 /*************** Hero Image ********************/
@@ -444,9 +461,21 @@ main #container h1{
 	}
 	nav img{
 		float: none;
-		margin:10px 5px 8px 10px;
+		margin:10px 5px 8px 20%;
 	}
 	#artists_container .artist{
 		flex-direction: column;
+	}
+	.menu_btn{
+		display: block;
+	}
+	nav .navbar{
+		display: none;
+	}
+	#container{
+		padding: 30px;
+	}
+	#container iframe{
+		width: 100% ;
 	}
 }
