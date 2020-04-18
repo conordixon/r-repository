@@ -53,22 +53,13 @@ color:white;
  color: pink;
  text-align: center;
  list-style: none;
- 
+ list-style: none;
+ display: inline-flex;
+ }
+ .mobile_navbar{
+	 display:none;
  }
 
-
-.navbar ul li{
-   color: green;
-   list-style: none;
-   display: inline-flex;
-   
-}
-
-.navbar .fas {
-   
-   color: yellow;
-   margin-right: 0.8em;
-}
 
 /*************** Hide /Show Menu ********/
 .menu_btn div{
