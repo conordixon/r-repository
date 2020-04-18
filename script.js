@@ -42,7 +42,7 @@ function sendingFunction()	{
           valid = false;
       } else if( document.forms["contact_form"]["email"].value == "" )
       {
-          alert ( "Please type in your email." );
+          alert ( "Please type in your email address." );
           valid = false;
       } else if( document.forms["contact_form"]["subject"].value == "reset" )
       {
