@@ -2,7 +2,7 @@
 // Form Script
 
 function sendingFunction()	{
-      valid = true;
+      let valid = true;
   
       if ( document.forms["contact_form"]["name"].value == "" )
       {
@@ -32,9 +32,10 @@ function sendingFunction()	{
 
 
 function toggleMenu(){
+  let navbar =document.getElementById("navabr");
   if (navbar.style.display ==="none"){
     navbar.style.display="block";
   }else{
     navbar.style.display="none";
-  }
+  } 
 }
