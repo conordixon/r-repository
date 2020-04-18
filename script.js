@@ -30,8 +30,8 @@ function sendingFunction()	{
 
 // Menu Script
 
-var navbar = document.getElementsByClassName("navbar");
 function toggleMenu(){
+  var navbar = document.getElementById("navbar");
   if (navbar.style.display ==="none"){
     navbar.style.display="block";
   }else{
