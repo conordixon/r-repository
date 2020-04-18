@@ -61,6 +61,7 @@ color:white;
  }
 
 
+
 /*************** Hide /Show Menu ********/
 .menu_btn div{
 	width: 25px;
@@ -459,9 +460,6 @@ main #container h1{
 	}
 	.menu_btn{
 		display: block;
-	}
-	nav .navbar{
-		display: none;
 	}
 	#container{
 		padding: 30px;
