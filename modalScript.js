@@ -1,20 +1,20 @@
 
 // Open the Modal
 function openModal() {
-    document.getElementById("myModal").style.display = "block";
+    document.getElementById("modalWindow").style.display = "block";
   }
   
   // Close the Modal
   function closeModal() {
-    document.getElementById("myModal").style.display = "none";
+    document.getElementById("modalWindow").style.display = "none";
   }
   
   let slideIndex = 1;
     showSlides(slideIndex);
   
   
-  // Next/previous controls
-  function plusSlides(n) {
+  // Next/previousious controls
+  function addSlides(n) {
     showSlides(slideIndex += n);
   }
   

@@ -1,6 +1,6 @@
 /* Navbar /Abubakr */
 /* Home page / Conor */
-/* Gallery / Lukasz */
+/* Gallery , Artists / Lukasz */
 /* Contact Form / Alex */
 
 *{
@@ -8,7 +8,7 @@
 	padding: 0;
 }
 
-/***************Navbar /Abubakr ********************/
+/*************** Navbar / Abubakr ********************/
 
 
 
@@ -62,7 +62,7 @@ color:white;
 
 
 
-/*************** Hide /Show Menu ********/
+/*************** Hide / Show Menu ********/
 .menu_btn div{
 	width: 25px;
 	height: 4px;
@@ -82,9 +82,9 @@ color:white;
 }
 
 
-/*************** Hero Image ********************/
+/*************** Hero Image / Lukasz ********************/
 
- #hero_img{
+ section #hero_img{
 	width:100%;
 	height: 70vh;
 	margin: 0;
@@ -225,11 +225,11 @@ main #container h1{
 } 
 
 
-/*************** Slideshow modal ********************/
+/*************** Slideshow modal / Lukasz ********************/
 
   
   /* The Modal (background) */
-  .modal {
+  #modalWindow {
 	display: none;
 	position: fixed;
 	z-index: 1;
@@ -243,7 +243,7 @@ main #container h1{
   }
   
   /* Modal Content */
-  .modal-content {
+  #modalWindow .modal-content {
 	position: relative;
 	margin: auto;
 	padding: 0;
@@ -252,7 +252,7 @@ main #container h1{
   }
   
   /* The Close Button */
-  .close {
+  #modalWindow .close {
 	color: white;
 	position: absolute;
 	top: 10px;
@@ -261,21 +261,21 @@ main #container h1{
 	font-weight: bold;
   }
   
-  .close:hover,
-  .close:focus {
+  #modalWindow .close:hover,
+  #modalWindow .close:focus {
 	color: #999;
 	text-decoration: none;
 	cursor: pointer;
   }
   
   /* Hide the slides by default */
-  .mySlides {
+  #modalWindow .mySlides {
 	display: none;
   }
   
-  /* Next & previous buttons */
-  .prev,
-  .next {
+  /* Next & previousious buttons */
+  #modalWindow .previous,
+  #modalWindow .next {
 	cursor: pointer;
 	position: absolute;
 	top: 50%;
@@ -292,33 +292,19 @@ main #container h1{
   }
   
   /* Position the "next button" to the right */
-  .next {
+  #modalWindow .next {
 	right: 0;
 	border-radius: 3px 0 0 3px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
-  .prev:hover,
-  .next:hover {
+  #modalWindow .previous:hover,
+  #modalWindow .next:hover {
 	background-color: rgba(0, 0, 0, 0.8);
   }
-  
-  
-  /* Caption text */
-  .caption-container {
-	text-align: center;
-	background-color: black;
-	padding: 2px 16px;
-	color: white;
-  }
-  
-  
-  .active{
-	opacity: 1;
-  }
-  
 
-  /***************  Artists **********************/
+
+  /***************  Artists / Lukasz **********************/
   #artists_container{
 	  margin: 30px auto;
 	  width: 80%;
@@ -367,7 +353,6 @@ main #container h1{
  #contact_form form {
 	background-color: white;	
 	width: 100%;
-	height: 700px;
 	margin-top:30px;
 	font-family: 'Merriweather', Arial, sans-serif;		
 	font-size: 20px;
@@ -427,8 +412,22 @@ main #container h1{
 #contact_form form textarea{
 	margin: 20px auto;
 }
+#contact_form #gender{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+#contact_form #gender .gender_box{
+	margin:10px 12px;
+}
+#contact_form #gender .gender_box label{
+	font-size: 16px;
+}
+#contact_form #gender{
+	margin-bottom: 20px;
+}
 
-/**************  gallery media query *****************/
+/**************  Gallery media query *****************/
 
 @media only screen and (max-width: 720px) {
 	#gallery{
@@ -444,7 +443,7 @@ main #container h1{
 }
 
 
-/**************  nav media query *****************/
+/**************  Nav media query *****************/
 
 @media only screen and (max-width: 720px){
 	nav{

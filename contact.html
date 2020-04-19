@@ -9,14 +9,16 @@
   </head>
 
   <body>
+
+	<!------------------------------  NAVBAR ----------------------------->
   	<nav>
-		  <img id="logo" src="images/logo_2.png" alt="">
-		  <div class="menu_btn" onclick="toggleMenu()" >
-			<div></div>
-			<div></div>
-			<div></div>
-		  </div>
-  		<div  id="navbar" class="navbar">
+  		<img id="logo" src="images/logo_2.png" alt="">
+  		<div class="menu_btn" onclick="toggleMenu()">
+  			<div></div>
+  			<div></div>
+  			<div></div>
+  		</div>
+  		<div id="navbar" class="navbar">
   			<ul>
   				<li><a href="index.html">Home</a></li>
   				<li><a href="artists.html">Artists</a></li>
@@ -27,7 +29,9 @@
   	</nav>
   	<section>
   		<div id="hero_img"></div>
-  	</section>
+	  </section>
+	  
+	  <!------------------------------  CONTACT FORM  ----------------------------->
 
   	<main id="contact_form">
   		<header>
@@ -41,30 +45,28 @@
   					<span>Name</span>
   					<input id="name" type="text" name="name" />
   				</label>
-				<label>
+  				<label>
   					<span>Date of Birth</span>
   					<input id="age" type="Date" name="age" />
   				</label>
-				 <label>
+  				<label>
   					<span>Gender</span><br>
-					<input type="radio" id="male" name="gender" value="Male">
-					<label for="male">Male</label><br>
-					<input type="radio" id="female" name="gender" value="Female">
-					<label for="female">Female</label><br>
-					<input type="radio" id="other" name="gender" value="Other">
-					<label for="other">Other</label><br>
+  					<div id="gender">
+  						<div class="gender_box"><input type="radio" id="male" name="gender" value="Male">
+  							<label for="male">Male</label></div>
+  						<div class="gender_box"><input type="radio" id="female" name="gender" value="Female">
+  							<label for="female">Female</label></div>
+  						<div class="gender_box"><input type="radio" id="other" name="gender" value="Other">
+  							<label for="other">Other</label></div>
+  					</div>
   				</label>
   				<label>
   					<span>Email Address</span>
   					<input id="email" type="text" name="email" />
   				</label>
-				<label>
+  				<label>
   					<span>Phone Number</span>
   					<input id="phone" type="number" name="phone" />
-  				</label>
-  				<label>
-  					<span>Email Address</span>
-  					<input id="email" type="text" name="email" />
   				</label>
   				<label>
   					<span>Subject</span>
@@ -85,10 +87,11 @@
   		</form>
   	</main>
 
+<!------------------------------  FOOTER  ----------------------------->
   	<footer>
   		<p>Address: District Art Ltd</p>
-    	<p>Email: districtartc@districtart.com</p>
-    	<p>Telephone: +353 (0) 74 9934556</p>
+  		<p>Email: districtartc@districtart.com</p>
+  		<p>Telephone: +353 (0) 74 9934556</p>
   	</footer>
 
   	<script src="script.js"></script>
