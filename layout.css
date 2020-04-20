@@ -119,11 +119,15 @@ nav img{
 	        transform: rotate(-25deg);
 }
 main header {
-	background-color: #666;
+	background-color: #fff;
 	padding: 15px;
 	text-align: center;
 	font-size: 35px;
-	color: white;
+	color: #666;
+}
+main hr{
+	width: 60%;
+	margin: 0 auto;
 }
 #container {
 	background-color: white;
