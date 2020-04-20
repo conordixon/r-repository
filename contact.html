@@ -10,11 +10,11 @@
 
   <body>
 
-	<!------------------------------  NAVBAR ----------------------------->
+  	<!--==========================  NAVBAR  ==========================-->
   	<nav>
-		<a href="index.html">
-			<img id="logo" src="images/logo_2.png" alt="">
-		</a>
+  		<a href="index.html">
+  			<img id="logo" src="images/logo_2.png" alt="">
+  		</a>
   		<div class="menu_btn" onclick="toggleMenu()">
   			<div></div>
   			<div></div>
@@ -29,11 +29,11 @@
   			</ul>
   		</div>
   	</nav>
-  	<section>
-  		<div id="hero_img"></div>
-	  </section>
-	  
-	  <!------------------------------  CONTACT FORM  ----------------------------->
+
+  	<!--==========================  HERO IMAGE  ==========================-->
+  	<div id="hero_img"></div>
+
+  	<!--==========================  CONTACT FORM  ==========================-->
 
   	<main id="contact_form">
   		<header>
@@ -49,9 +49,8 @@
   				</label>
   				<label>
   					<span>Date of Birth</span>
-  					<input id="age" type="Date" name="age" />
+  					<input id="age" type="date" name="age" />
   				</label>
-  				<label>
   					<span>Gender</span><br>
   					<div id="gender">
   						<div class="gender_box"><input type="radio" id="male" name="gender" value="Male">
@@ -61,10 +60,9 @@
   						<div class="gender_box"><input type="radio" id="other" name="gender" value="Other">
   							<label for="other">Other</label></div>
   					</div>
-  				</label>
   				<label>
   					<span>Email Address</span>
-  					<input id="email" type="text" name="email" />
+  					<input id="email" type="email" name="email" />
   				</label>
   				<label>
   					<span>Phone Number</span>
@@ -73,7 +71,7 @@
   				<label>
   					<span>Subject</span>
   					<select id="subjects" name="subject">
-  						<option value="reset"> </option>
+  						<option value="reset">choose subject</option>
   						<option value="events">Events</option>
   						<option value="tickets">Tickets</option>
   						<option value="artists">Artists</option>
@@ -83,13 +81,13 @@
   				<label>
   					<span>Message</span>
   					<textarea id="feedback" name="feedback"></textarea>
-  					<input class="button" onclick="sendingFunction()" type="button" value="Submit" />
-  				</label>
+				  </label>
+				  <input class="button" onclick="sendingFunction()" type="button" value="Submit" />
   			</div>
   		</form>
   	</main>
 
-<!------------------------------  FOOTER  ----------------------------->
+  	<!--==========================  FOOTER  ==========================-->
   	<footer>
   		<p>Address: District Art Ltd</p>
   		<p>Email: districtartc@districtart.com</p>
