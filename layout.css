@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /* Navbar /Abubakr */
 /* Home page / Conor */
 /* Gallery , Artists / Lukasz */
@@ -24,7 +26,8 @@ nav{
 	top:20px;
 	width: 80%;
 	text-align: center;
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 	opacity: 0.9;
 	z-index: 2;
 }
@@ -54,6 +57,8 @@ color:white;
  text-align: center;
  list-style: none;
  list-style: none;
+ display: -webkit-inline-box;
+ display: -ms-inline-flexbox;
  display: inline-flex;
  }
  .mobile_navbar{
@@ -91,7 +96,6 @@ color:white;
     background:  url("images/hero.jpg");
 	background-position: center;
 	background-size: cover;
-	back
     background-repeat: no-repeat;
     width: 100%;
     -webkit-box-sizing: border-box;
@@ -110,7 +114,9 @@ nav img{
 	float: left;
 	width: 50px;
 	height: 50px;
-	transform: rotate(-25deg);
+	-webkit-transform: rotate(-25deg);
+	    -ms-transform: rotate(-25deg);
+	        transform: rotate(-25deg);
 }
 main header {
 	background-color: #666;
@@ -133,7 +139,8 @@ main header {
 	margin-bottom: 20px;
 }
 #mainsection {
-	display: -webkit-flex;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 footer {
@@ -153,11 +160,13 @@ main #container iframe{
 /*************** Gallery / Lukasz ********************/
 #gallery div:not(h2):not(.modal){
  border-radius: 3px;
+ display: -ms-grid;
  display: grid;
 }
 #gallery{
+	display:-ms-grid;
 	display:grid;
-	grid-template-areas: "one one two three"
+	    grid-template-areas: "one one two three"
 						 "one one four three"
 						 "five six eight eight"
 						 "seven seven eight eight";
@@ -170,8 +179,12 @@ main #container iframe{
 	background-position: center;
 }
 #gallery .box:hover{
-	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	    -ms-transform: scale(1.1);
+	        transform: scale(1.1);
 	z-index: 1;
+	-webkit-transition: 0.4s ease-in-out;
+	-o-transition: 0.4s ease-in-out;
 	transition: 0.4s ease-in-out;
 	background-size: cover;
 	background-position: center;
@@ -186,42 +199,67 @@ main #container iframe{
 	font-weight: 600;
 }
 #gallery div{
-	justify-content: center;
-	align-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-ms-flex-line-pack: center;
+	    align-content: center;
 	text-align: center;
 	text-shadow: 2px 2px 5px #fff,-2px -2px 3px #fff;
 }
 #gallery .img-1{
+	-ms-grid-row:1;
+	-ms-grid-row-span:3;
+	-ms-grid-column:1;
+	-ms-grid-column-span:3;
 	grid-area:one;
 	background-image: url("images/1.jpg");
 }
 #gallery .img-2{
+	-ms-grid-row:1;
+	-ms-grid-column:5;
 	grid-area:two;
 	background-image: url("images/2.jpg");
 	
 }
 #gallery .img-3{
+	-ms-grid-row:1;
+	-ms-grid-row-span:3;
+	-ms-grid-column:7;
 	grid-area:three;
 	background-image: url("images/3.jpg");
 }
 #gallery .img-4{
+	-ms-grid-row:3;
+	-ms-grid-column:5;
 	grid-area:four;
 	background-image: url("images/4.jpg");
 }
 #gallery .img-5{
+	-ms-grid-row:5;
+	-ms-grid-column:1;
 	grid-area:five;
 	background-image: url("images/5.jpg");
 }
 
 #gallery .img-6{
+	-ms-grid-row:5;
+	-ms-grid-column:3;
 	grid-area:six;
 	background-image: url("images/6.jpg");
 }
 #gallery .img-7{
+	-ms-grid-row:7;
+	-ms-grid-column:1;
+	-ms-grid-column-span:3;
 	grid-area:seven;
 	background-image: url("images/7.jpg");
 }
 #gallery .img-8{
+	-ms-grid-row:5;
+	-ms-grid-row-span:3;
+	-ms-grid-column:5;
+	-ms-grid-column-span:3;
 	grid-area:eight;
 	background-image: url("images/8.jpg");
 } 
@@ -287,9 +325,13 @@ main #container iframe{
 	color: white;
 	font-weight: bold;
 	font-size: 20px;
+	-webkit-transition: 0.6s ease;
+	-o-transition: 0.6s ease;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
-	user-select: none;
+	-moz-user-select: none;
+	 -ms-user-select: none;
+	     user-select: none;
 	-webkit-user-select: none;
   }
   
@@ -310,13 +352,22 @@ main #container iframe{
   #artists_container{
 	  margin: 30px auto;
 	  width: 80%;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
 	  display: flex;
-	  flex-direction: column;
+	  -webkit-box-orient: vertical;
+	  -webkit-box-direction: normal;
+	      -ms-flex-direction: column;
+	          flex-direction: column;
   }
   #artists_container .artist{
 	  margin: 30px 10px;
+	  display: -webkit-box;
+	  display: -ms-flexbox;
 	  display: flex;
-	  align-items: center;
+	  -webkit-box-align: center;
+	      -ms-flex-align: center;
+	          align-items: center;
 	  text-align: center;
 	  padding: 0 20px;
   }
@@ -330,7 +381,10 @@ main #container iframe{
   
   #artists_container .artist_right{
 	  float: right;
-	  flex-direction: row-reverse;
+	  -webkit-box-orient: horizontal;
+	  -webkit-box-direction: reverse;
+	      -ms-flex-direction: row-reverse;
+	          flex-direction: row-reverse;
   }
   #artists_container img{
 	  margin: 15px;
@@ -338,7 +392,10 @@ main #container iframe{
 	  border-radius: 50%;
   }
   #artists_container .artist:hover{
-	  box-shadow:  1px 1px 5px #666;
+	  -webkit-box-shadow:  1px 1px 5px #666;
+	          box-shadow:  1px 1px 5px #666;
+	  -webkit-transition:300ms ease-in-out;
+	  -o-transition:300ms ease-in-out;
 	  transition:300ms ease-in-out;
   }
   #artists_container .artist ul li{
@@ -415,9 +472,16 @@ main #container iframe{
 	margin: 20px auto;
 }
 #contact_form #gender{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 #contact_form #gender .gender_box{
 	margin:10px 12px;
@@ -433,7 +497,7 @@ main #container iframe{
 
 @media only screen and (max-width: 720px) {
 	#gallery{
-		grid-template-areas: "one"
+		    grid-template-areas: "one"
 							 "two"
 							 "three"
 							 "four"
@@ -441,6 +505,44 @@ main #container iframe{
 							 "six"
 							 "seven"
 							 "eight";
+	}
+	#gallery .img-1{
+		-ms-grid-row:1;
+		-ms-grid-row-span:1;
+		-ms-grid-column:1;
+		-ms-grid-column-span:1;
+	}
+	#gallery .img-2{
+		-ms-grid-row:2;
+		-ms-grid-column:1;
+	}
+	#gallery .img-3{
+		-ms-grid-row:3;
+		-ms-grid-row-span:1;
+		-ms-grid-column:1;
+	}
+	#gallery .img-4{
+		-ms-grid-row:4;
+		-ms-grid-column:1;
+	}
+	#gallery .img-5{
+		-ms-grid-row:5;
+		-ms-grid-column:1;
+	}
+	#gallery .img-6{
+		-ms-grid-row:6;
+		-ms-grid-column:1;
+	}
+	#gallery .img-7{
+		-ms-grid-row:7;
+		-ms-grid-column:1;
+		-ms-grid-column-span:1;
+	}
+	#gallery .img-8{
+		-ms-grid-row:8;
+		-ms-grid-row-span:1;
+		-ms-grid-column:1;
+		-ms-grid-column-span:1;
 	}
 }
 
@@ -457,7 +559,10 @@ main #container iframe{
 		margin:10px 5px 8px 20%;
 	}
 	#artists_container .artist{
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 	}
 	.menu_btn{
 		display: block;
