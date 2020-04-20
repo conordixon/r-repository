@@ -1,7 +1,7 @@
 // Form Script
 
 function sendingFunction() {
-  valid = true;
+  let valid = true;
 
   if (document.forms["contact_form"]["name"].value == "") {
     alert("Please type in your name.");
@@ -35,7 +35,7 @@ function sendingFunction() {
 // Menu Script
 
 function toggleMenu() {
-  var navbar = document.getElementById("navbar");
+  let navbar = document.getElementById("navbar");
   if (navbar.style.display === "none") {
     navbar.style.display = "block";
   } else {
