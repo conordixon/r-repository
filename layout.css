@@ -33,6 +33,7 @@ nav{
 }
 
 
+
 .navbar a {
 
 text-decoration: none;
@@ -42,6 +43,10 @@ font-weight: 500;
 margin:0px;
 color: pink;
 }
+.navbar a:visited {
+	color: purple;
+}
+
 
 .active, .navbar ul li:hover, .navbar a:hover {
    
