@@ -1,0 +1,101 @@
+  <!DOCTYPE html>
+  <html lang="en">
+
+  <head>
+  	<meta charset="UTF-8">
+  	<title>Contact Form</title>
+  	<link rel="stylesheet" href="layout.css">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+  	<!--==========================  NAVBAR  ==========================-->
+  	<nav>
+  		<a href="index.html">
+  			<img id="logo" src="images/logo_2.png" alt="">
+  		</a>
+  		<div class="menu_btn" onclick="toggleMenu()">
+  			<div></div>
+  			<div></div>
+  			<div></div>
+  		</div>
+  		<div id="navbar" class="navbar">
+  			<ul>
+  				<li><a href="index.html">Home</a></li>
+  				<li><a href="artists.html">Artists</a></li>
+  				<li><a href="gallery.html">Gallery</a></li>
+  				<li><a href="contact.html">Contact us</a></li>
+  			</ul>
+  		</div>
+  	</nav>
+
+  	<!--==========================  HERO IMAGE  ==========================-->
+  	<div id="hero_img"></div>
+
+  	<!--==========================  CONTACT FORM  ==========================-->
+
+  	<main id="contact_form">
+  		<header>
+  			<h3>Contact Form</h3>
+		  </header>
+		  <hr>
+
+  		<form name="contact_form">
+  			<div>
+  				<h1>Contact Us!</h1>
+  				<label>
+  					<span>Name</span>
+  					<input id="name" type="text" name="name" />
+  				</label>
+  				<label>
+  					<span>Date of Birth</span>
+  					<input id="age" type="date" name="age" />
+  				</label>
+  					<span>Gender</span><br>
+  					<div id="gender">
+  						<div class="gender_box"><input type="radio" id="male" name="gender" value="Male">
+  							<label for="male">Male</label></div>
+  						<div class="gender_box"><input type="radio" id="female" name="gender" value="Female">
+  							<label for="female">Female</label></div>
+  						<div class="gender_box"><input type="radio" id="other" name="gender" value="Other">
+  							<label for="other">Other</label></div>
+  					</div>
+  				<label>
+  					<span>Email Address</span>
+  					<input id="email" type="email" name="email" />
+  				</label>
+  				<label>
+  					<span>Phone Number</span>
+  					<input id="phone" type="number" name="phone" />
+  				</label>
+  				<label>
+  					<span>Subject</span>
+  					<select id="subjects" name="subject">
+  						<option value="reset">choose subject</option>
+  						<option value="events">Events</option>
+  						<option value="tickets">Tickets</option>
+  						<option value="artists">Artists</option>
+  						<option value="0ther">Other</option>
+  					</select>
+  				</label>
+  				<label>
+  					<span>Message</span>
+  					<textarea id="feedback" name="feedback"></textarea>
+				  </label>
+				  <input class="button" onclick="sendingFunction()" type="button" value="Submit" />
+  			</div>
+  		</form>
+  	</main>
+
+  	<!--==========================  FOOTER  ==========================-->
+  	<footer>
+  		<p>Address: District Art Ltd</p>
+  		<p>Email: districtartc@districtart.com</p>
+  		<p>Telephone: +353 (0) 74 9934556</p>
+  	</footer>
+
+  	<script src="script.js"></script>
+  </body>
+
+  </html>

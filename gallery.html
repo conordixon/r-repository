@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gallery</title>
+    <meta name="author" content="Lukasz Plawinski">
+    <meta name="Overview " content="Artist Home Page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="layout.css" type="text/css" />
+</head>
+
+<body>
+
+    <!--==========================  NAVBAR  ==========================-->
+
+    <nav>
+        <a href="index.html">
+            <img id="logo" src="images/logo_2.png" alt="">
+        </a>
+        <div class="menu_btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--==========================  HERO IMAGE  ==========================-->
+
+    <div id="hero_img"></div>
+
+    <!--==========================  MAIN SECTION / GALLERY  ==========================-->
+    <main>
+        <header>
+            <h3>Gallery</h3>
+        </header>
+        <hr>
+        <div id="gallery">
+            <div class="img-1  box" onclick="openModal();currSlide(1)">
+                <div class="text">
+                    <h2>Dabble</h2>
+                    <i>Zacharie Dulys</i>
+                </div>
+            </div>
+            <div class="img-2  box" onclick="openModal();currSlide(2)">
+                <div class="text">
+                    <h2>Step Over</h2>
+                    <i>Elise Mobuchon</i>
+                </div>
+            </div>
+            <div class="img-3  box" onclick="openModal();currSlide(3)">
+                <div class="text">
+                    <h2>Tunnel Vision</h2>
+                    <i>Freddy Callaghan</i>
+                </div>
+            </div>
+            <div class="img-4  box" onclick="openModal();currSlide(4)">
+                <div class="text">
+                    <h2>Unity</h2>
+                    <i>Aoidheann O’ Chuinleann</i>
+                </div>
+            </div>
+            <div class="img-5  box" onclick="openModal();currSlide(5)">
+                <div class="text">
+                    <h2>Butterfly</h2>
+                    <i>Freddy Callaghan</i>
+                </div>
+            </div>
+            <div class="img-6  box" onclick="openModal();currSlide(6)">
+                <div class="text">
+                    <h2>Stand Aside</h2>
+                    <i>Elise Mobuchon</i>
+                </div>
+            </div>
+            <div class="img-7  box" onclick="openModal();currSlide(7)">
+                <div class="text">
+                    <h2>Chapel</h2>
+                    <i>Zacharie Dulys</i>
+                </div>
+            </div>
+            <div class="img-8  box" onclick="openModal();currSlide(8)">
+                <div class="text">
+                    <h2>Autumn Nature</h2>
+                    <i>Aoidheann O’ Chuinleann</i>
+                </div>
+            </div>
+
+             <!--==========================  MODAL /WINDOW GALLERY ==========================-->
+            <div id="modalWindow" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+
+                <div class="modal-content">
+                    <div class="mySlides">
+                        <img class="" src="images/1.jpg" alt="1" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/2.jpg" alt="2" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/3.jpg" alt="3" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/4.jpg" alt="4" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/5.jpg" alt="5" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/6.jpg" alt="6" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/7.jpg" alt="7" style="width:100%">
+                    </div>
+                    <div class="mySlides">
+                        <img src="images/8.jpg" alt="8" style="width:100%">
+                    </div>
+
+                    <a class="previous" onclick="addSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="addSlides(1)">&#10095;</a>
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--==========================  FOOTER  ==========================-->
+    <footer>
+        <p>Address: District Art Ltd</p>
+        <p>Email: districtartc@districtart.com</p>
+        <p>Telephone: +353 (0) 74 9934556</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="modalScript.js"></script>
+
+</body>
+
+</html>

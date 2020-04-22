@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Artist Home Page</title>
+  <meta name="Artist Home Page" content="Overview">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="layout.css" type="text/css" />
+</head>
+
+<body>
+
+  <!--==========================  NAVBAR  ==========================-->
+  <nav>
+    <a href="index.html">
+      <img id="logo" src="images/logo_2.png" alt="">
+    </a>
+    <div class="menu_btn" onclick="toggleMenu()">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div id="navbar" class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!--==========================  HERO IMAGE  ==========================-->
+
+  <div id="hero_img"></div>
+
+  <!--==========================  MAIN SECTION / ARTISTS  ==========================-->
+  <main>
+    <header>
+      <h3>Our Artists</h3>
+    </header>
+    <hr>
+    <div id="artists_container">
+      <div class="artist_left artist">
+        <img src="images/artist_1.jpg" alt="artist_1">
+        <div class="description">
+          <a href="">
+            <h3>Elise Mobuchon</h3>
+          </a>
+          <ul>
+            <li>French-born Art lover raised in Dublin.</li>
+            <li>Studied Art at NCAD and works as a Graphic Designer for a start-up company.</li>
+            <li>Elise spends her free time sketching, painting and attending exhibitions around Ireland.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="artist_right artist">
+        <img src="images/artist_5.jpg" alt="artist_5">
+        <div class="description">
+          <a href="">
+            <h3>Freddy Callaghan</h3>
+          </a>
+          <ul>
+            <li>Born and raised in Dublin.</li>
+            <li>Influenced by his art-obsessed parents, Freddy puts his heart and soul into his work.</li>
+            <li>Freelances his work, mainly sculpturing or modelling shoots.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="artist_left artist">
+        <img src="images/artist_3.jpg" alt="artist_3">
+        <div class="description">
+          <a href="">
+            <h3>Aoidheann O’ Chuinleann</h3>
+          </a>
+          <ul>
+            <li>Galway-based environmentalist.</li>
+            <li>Aoidheann is an enthusiast of environmental art but has a variety of different styles.</li>
+            <li>A lead contributor to the Galway 2020 project.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="artist_right artist">
+        <img src="images/artist_6.jpg" alt="artist_6">
+        <div class="description">
+          <a href="">
+            <h3>Zacharie Dulys</h3>
+          </a>
+          <ul>
+            <li>Dublin-born student.</li>
+            <li>As a kid, Zacharie was obsessed by the murals that surrounded him on his way to school.</li>
+            <li>Since then, he was made a name for himself as a street artist, collaborating with groups such as Subset.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!--==========================  FOOTER  ==========================-->
+  <footer>
+    <p>Address: District Art Ltd</p>
+    <p>Email: districtartc@districtart.com</p>
+    <p>Telephone: +353 (0) 74 9934556</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
